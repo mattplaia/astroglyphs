@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AstroGlyphs Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap"
+    />
+  </head>
+  <body>
+    <div class="container" id="astro-converter">
+      <div class="input-container">
+        <label for="inputText" class="label jost-text"
+          >AstroGlyph Generator</label
+        >
+        <div class="input-wrapper">
+          <textarea
+            id="inputText"
+            placeholder="Try me out!&#10;Rotate your phone&#10;if in mobile."
+            rows="5"
+            maxlength="79"
+            oninput="limitTextarea()"
+            class="input-field jost-text"
+            wrap="soft"
+          ></textarea>
+        </div>
+      </div>
+      <button class="custom-button jost-text" onclick="convertToAstroGlyphs()">
+        CONVERT
+      </button>
+      <button class="custom-button jost-text" onclick="colorizeAstroGlyphs()">
+        COLORIZE
+      </button>
+      <div id="output"></div>
+      <div id="colorPopup" style="display: none">
+        <input
+          type="color"
+          id="colorPicker"
+          value="#FFFFFF"
+          style="display: block; margin: 10px auto"
+        />
+        <button class="custom-button jost-text" onclick="closeColorPicker()">
+          CLOSE
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
