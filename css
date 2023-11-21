@@ -1,0 +1,69 @@
+/* Apply styles only to elements within the AstroGlyphs converter container */
+#astro-converter .jost-text {
+  font-family: "Jost", sans-serif; /* Apply the Jost font */
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 2px;
+}
+
+#astro-converter .input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#astro-converter .label.jost-text {
+  text-align: center;
+  margin-bottom: 15px; /* Add space between label and input field */
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#astro-converter .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#astro-converter .input-field.jost-text {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 20em; /* Adjust the width as needed (20em for 20 characters per line) */
+  max-width: 100%; /* Ensure it doesn't overflow its container */
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+
+#astro-converter .custom-button.jost-text {
+  background-color: #6060d1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 15px; /* Add space between label and input field */
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+
+#astro-converter .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+#astro-converter #output {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1;
+}
