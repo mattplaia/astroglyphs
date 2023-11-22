@@ -1,7 +1,7 @@
 /* Apply styles only to elements within the AstroGlyphs converter container */
 #astro-converter .jost-text {
-  font-family: "Jost", sans-serif; /* Apply the Jost font */
-  text-transform: uppercase; /* Make text uppercase */
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
@@ -14,7 +14,7 @@
 
 #astro-converter .label.jost-text {
   text-align: center;
-  margin-bottom: 15px; /* Add space between label and input field */
+  margin-bottom: 15px;
   font-weight: bold;
   font-size: 2em;
 }
@@ -29,12 +29,11 @@
   background-color: black;
   color: white;
   text-align: center;
-  width: 20em; /* Adjust the width as needed (20em for 20 characters per line) */
-  max-width: 100%; /* Ensure it doesn't overflow its container */
+  width: 20em;
+  max-width: 100%;
   white-space: pre-wrap;
   word-break: break-all;
 }
-
 
 #astro-converter .custom-button.jost-text {
   background-color: #6060d1;
@@ -43,7 +42,7 @@
   padding: 10px 20px;
   cursor: pointer;
   text-transform: uppercase;
-  margin-bottom: 15px; /* Add space between label and input field */
+  margin-bottom: 15px;
 }
 
 body {
@@ -62,8 +61,20 @@ body {
 }
 
 #astro-converter #output {
-  margin-top: 20px;
+  margin-bottom: 20px;
   white-space: pre-wrap;
   word-break: break-word;
   line-height: 1;
+  display: flex; /* Use flexbox */
+  flex-direction: column;
+  height: auto; /* Adjust height as needed */
+  padding-top: 20px; /* Add padding at the top */
+}
+
+#astro-converter .save-share-buttons {
+  margin-top: 10px;
+}
+
+#astro-converter .save-share-buttons .custom-button {
+  margin: 5px;
 }
