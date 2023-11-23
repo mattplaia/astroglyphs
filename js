@@ -38,15 +38,15 @@ var originalAstroGlyphsMap = {
   ")": " *   \n  *  \n  *  \n  *  \n *   ", // Parenthesis Right
   "/": "    *\n   * \n  *  \n *   \n*    ", // Back Slash
   "#": " * * \n*****\n * * \n*****\n * * ", // Hashtag
-  "$": " ****\n* *  \n *** \n  * *\n**** ", // Dollar Sign
+  $: " ****\n* *  \n *** \n  * *\n**** ", // Dollar Sign
   "%": "**  *\n** * \n  *  \n * **\n*  **", // Back Slash
   "*": "* * *\n *** \n*****\n *** \n* * *", // Asterisk
   "=": "     \n*****\n     \n*****\n     ", // Equals Sign
-  0: " *** \n*   *\n*   *\n*   *\n *** ",
+  0: " *** \n*  **\n* * *\n**  *\n *** ",
   1: "  *  \n **  \n  *  \n  *  \n *** ",
   2: " *** \n*   *\n   * \n  *  \n*****",
   3: " *** \n*   *\n  ** \n*   *\n *** ",
-  4: "*  *\n*  *\n****\n   *\n   *",
+  4: "*   *\n*   *\n*****\n    *\n    *",
   5: "*****\n*    \n *** \n    *\n**** ",
   6: " *** \n*    \n**** \n*   *\n *** ",
   7: "*****\n    *\n   * \n  *  \n *   ",
@@ -59,7 +59,9 @@ var currentColor = "#FFFFFF"; // Default color
 function convertToAstroGlyphs() {
   var input = document.getElementById("inputText").value.toUpperCase();
   var output = convertText(input);
-  document.getElementById("output").innerHTML = output;
+  var outputElement = document.getElementById("output");
+  outputElement.innerHTML = output;
+  outputElement.style.color = currentColor; // Apply the current color
 }
 
 function convertText(text) {
@@ -119,3 +121,8 @@ function clearInput() {
 
 // Call convertToAstroGlyphs initially to show the default text in AstroGlyph style
 convertToAstroGlyphs();
+
+function closeColorPopup() {
+  var colorPopup = document.getElementById("colorPopup");
+  colorPopup.style.display = "none";
+}
