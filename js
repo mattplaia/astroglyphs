@@ -42,6 +42,8 @@ var originalAstroGlyphsMap = {
   "%": "**  *\n** * \n  *  \n * **\n*  **", // Back Slash
   "*": "* * *\n *** \n*****\n *** \n* * *", // Asterisk
   "=": "     \n*****\n     \n*****\n     ", // Equals Sign
+  "<": "  *  \n *   \n*    \n *   \n  *  ", // Angle Bracket Left
+  ">": "  *  \n   * \n    *\n   * \n  *  ", // Angle Bracket Right
   0: " *** \n*  **\n* * *\n**  *\n *** ",
   1: "  *  \n **  \n  *  \n  *  \n *** ",
   2: " *** \n*   *\n   * \n  *  \n*****",
