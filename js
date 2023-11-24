@@ -38,7 +38,7 @@ var originalAstroGlyphsMap = {
   ")": " *   \n  *  \n  *  \n  *  \n *   ", // Parenthesis Right
   "/": "    *\n   * \n  *  \n *   \n*    ", // Back Slash
   "#": " * * \n*****\n * * \n*****\n * * ", // Hashtag
-  $: " ****\n* *  \n *** \n  * *\n**** ", // Dollar Sign
+  "$": " ****\n* *  \n *** \n  * *\n**** ", // Dollar Sign
   "%": "**  *\n** * \n  *  \n * **\n*  **", // Back Slash
   "*": "* * *\n *** \n*****\n *** \n* * *", // Asterisk
   "=": "     \n*****\n     \n*****\n     ", // Equals Sign
